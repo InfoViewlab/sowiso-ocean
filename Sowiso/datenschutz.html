@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<title>Datenschutz – Sowiso Ocean Aachen</title>
+<meta name="description" content="Datenschutzerklärung von Sowiso Ocean Bar & Pub Aachen">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --ink:#0e0b08;--ink2:#1a1410;
+  --gold:#c8a04a;--gold2:#e8c070;
+  --cream:#f0e8d8;--muted:#8a7a6a;
+  --border:rgba(200,160,74,0.18);
+  --pad:clamp(20px,5vw,40px);
+}
+html{scroll-behavior:smooth}
+body{background:var(--ink);color:var(--cream);font-family:'Playfair Display',serif;min-width:320px}
+nav{display:flex;align-items:center;justify-content:space-between;padding:16px var(--pad);background:rgba(14,11,8,.97);border-bottom:0.5px solid var(--border);position:sticky;top:0;z-index:100;backdrop-filter:blur(8px)}
+.nav-logo{font-size:18px;color:var(--gold);letter-spacing:.06em;text-decoration:none}
+.nav-links{display:flex;gap:24px;list-style:none}
+.nav-links a{color:rgba(240,232,216,.6);text-decoration:none;font-size:12px;letter-spacing:.1em;text-transform:uppercase;font-family:'Inter',sans-serif;font-weight:500;transition:color .2s}
+.nav-links a:hover,.nav-links a.active{color:var(--gold)}
+.nav-back{color:var(--gold);font-size:12px;letter-spacing:.08em;text-transform:uppercase;font-family:'Inter',sans-serif;text-decoration:none;border:1px solid var(--border);padding:8px 16px;transition:border-color .2s}
+.nav-back:hover{border-color:var(--gold)}
+.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;background:none;border:none;padding:6px;min-width:44px;min-height:44px;align-items:center;justify-content:center}
+.hamburger span{display:block;width:22px;height:1.5px;background:var(--cream)}
+.mob-menu{display:none;position:fixed;inset:0;background:var(--ink);z-index:200;flex-direction:column;align-items:center;justify-content:center;gap:1.8rem;padding:40px}
+.mob-menu.open{display:flex}
+.mob-menu a{color:var(--cream);text-decoration:none;font-size:22px;transition:color .2s;min-height:44px;display:flex;align-items:center}
+.mob-menu a:hover{color:var(--gold)}
+.mob-close{position:absolute;top:20px;right:var(--pad);background:none;border:none;color:var(--cream);font-size:28px;cursor:pointer}
+.page-hero{padding:clamp(60px,10vw,100px) var(--pad) clamp(40px,6vw,64px);background:linear-gradient(180deg,var(--ink2) 0%,var(--ink) 100%);border-bottom:0.5px solid var(--border)}
+.page-eyebrow{font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);font-family:'Inter',sans-serif;margin-bottom:16px}
+.page-title{font-size:clamp(32px,5vw,56px);font-weight:400;color:var(--cream);line-height:1.1;margin-bottom:16px}
+.page-title em{font-style:italic;color:var(--gold)}
+.page-sub{font-size:14px;color:var(--muted);font-family:'Inter',sans-serif;font-weight:300}
+.page-content{max-width:800px;margin:0 auto;padding:clamp(48px,8vw,80px) var(--pad)}
+.section-block{margin-bottom:48px;padding-bottom:48px;border-bottom:0.5px solid var(--border)}
+.section-block:last-child{border-bottom:none;margin-bottom:0}
+.block-num{font-size:10px;letter-spacing:.2em;color:rgba(200,160,74,.4);font-family:'Inter',sans-serif;margin-bottom:10px}
+.block-title{font-size:clamp(18px,2.5vw,24px);color:var(--cream);font-weight:400;margin-bottom:16px}
+.block-body{font-size:14px;color:rgba(240,232,216,.65);font-family:'Inter',sans-serif;font-weight:300;line-height:1.85}
+.block-body p{margin-bottom:12px}
+.block-body p:last-child{margin-bottom:0}
+.block-body ul{padding-left:20px;margin-bottom:12px}
+.block-body ul li{margin-bottom:6px}
+.placeholder-box{background:var(--ink2);border:1px dashed rgba(200,160,74,.25);padding:20px;border-radius:2px;font-family:'Inter',sans-serif;font-size:13px;color:var(--muted);margin-bottom:12px}
+footer{padding:clamp(20px,4vw,28px) var(--pad);display:flex;justify-content:space-between;align-items:center;gap:16px;border-top:0.5px solid var(--border);flex-wrap:wrap;margin-top:0}
+footer span{color:rgba(240,232,216,.4);font-family:'Inter',sans-serif;font-size:12px}
+.footer-links{display:flex;gap:20px;flex-wrap:wrap}
+.footer-links a{color:rgba(240,232,216,.35);text-decoration:none;font-family:'Inter',sans-serif;font-size:12px;transition:color .2s;min-height:44px;display:inline-flex;align-items:center}
+.footer-links a:hover{color:var(--gold)}
+@media(max-width:768px){
+  .nav-links,.nav-back{display:none}
+  .hamburger{display:flex}
+  footer{justify-content:center;text-align:center}
+  .footer-links{justify-content:center}
+}
+</style>
+</head>
+<body>
+<div class="mob-menu" id="mobMenu">
+  <button class="mob-close" onclick="document.getElementById('mobMenu').classList.remove('open');document.body.style.overflow=''">&#x2715;</button>
+  <a href="/index.html">Startseite</a>
+  <a href="/agb.html">AGBs</a>
+  <a href="/impressum.html">Impressum</a>
+  <a href="/datenschutz.html">Datenschutz</a>
+</div>
+<nav>
+  <a href="/index.html" class="nav-logo">Sowiso &middot; Ocean</a>
+  <ul class="nav-links">
+    <li><a href="/index.html">Startseite</a></li>
+    <li><a href="/agb.html" id="nav-agb">AGBs</a></li>
+    <li><a href="/impressum.html" id="nav-imp">Impressum</a></li>
+    <li><a href="/datenschutz.html" id="nav-ds">Datenschutz</a></li>
+  </ul>
+  <a href="/index.html" class="nav-back">&#x2190; Zur&uuml;ck zur Bar</a>
+  <button class="hamburger" onclick="document.getElementById('mobMenu').classList.add('open');document.body.style.overflow='hidden'"><span></span><span></span><span></span></button>
+</nav>
+<div class="page-hero">
+  <div class="page-eyebrow">Rechtliches</div>
+  <h1 class="page-title">Daten<em>schutz</em></h1>
+  <p class="page-sub">Datenschutzerklärung gemäß DSGVO</p>
+</div>
+<div class="page-content">
+
+  <div class="section-block">
+    <div class="block-num">01</div>
+    <h2 class="block-title">Verantwortlicher</h2>
+    <div class="block-body">
+      <div class="placeholder-box">&#x270F; Name und Adresse des Datenschutzverantwortlichen</div>
+    </div>
+  </div>
+
+  <div class="section-block">
+    <div class="block-num">02</div>
+    <h2 class="block-title">Welche Daten wir erheben</h2>
+    <div class="block-body">
+      <p>Beim Besuch dieser Webseite werden folgende Daten automatisch erhoben:</p>
+      <ul>
+        <li>IP-Adresse (anonymisiert)</li>
+        <li>Datum und Uhrzeit des Zugriffs</li>
+        <li>Aufgerufene Seite</li>
+        <li>Browser und Betriebssystem</li>
+      </ul>
+      <p>Diese Daten werden ausschließlich zur technischen Bereitstellung der Webseite verwendet.</p>
+    </div>
+  </div>
+
+  <div class="section-block">
+    <div class="block-num">03</div>
+    <h2 class="block-title">Kontaktformular & E-Mail</h2>
+    <div class="block-body">
+      <p>Wenn Sie uns per E-Mail kontaktieren, werden Ihre Angaben zur Bearbeitung der Anfrage gespeichert. Diese Daten geben wir nicht ohne Ihre Einwilligung weiter.</p>
+    </div>
+  </div>
+
+  <div class="section-block">
+    <div class="block-num">04</div>
+    <h2 class="block-title">Cookies</h2>
+    <div class="block-body">
+      <p>Diese Webseite verwendet ausschließlich technisch notwendige Cookies (Spracheinstellung, Session). Es werden keine Tracking- oder Marketing-Cookies eingesetzt.</p>
+    </div>
+  </div>
+
+  <div class="section-block">
+    <div class="block-num">05</div>
+    <h2 class="block-title">Cloudflare</h2>
+    <div class="block-body">
+      <p>Diese Webseite wird über Cloudflare Pages gehostet. Cloudflare verarbeitet dabei technische Verbindungsdaten. Weitere Informationen: <a href="https://www.cloudflare.com/privacypolicy/" target="_blank" style="color:var(--gold)">cloudflare.com/privacypolicy</a></p>
+    </div>
+  </div>
+
+  <div class="section-block">
+    <div class="block-num">06</div>
+    <h2 class="block-title">Ihre Rechte</h2>
+    <div class="block-body">
+      <p>Sie haben das Recht auf Auskunft, Berichtigung, Löschung und Einschränkung der Verarbeitung Ihrer personenbezogenen Daten sowie das Recht auf Datenübertragbarkeit.</p>
+      <p>Kontakt: <a href="mailto:info@sowiso-ocean.com" style="color:var(--gold)">info@sowiso-ocean.com</a></p>
+    </div>
+  </div>
+
+</div>
+<footer>
+  <span>&copy; 2025 Sowiso &middot; Ocean &middot; Aachen</span>
+  <div class="footer-links">
+    <a href="/agb.html">AGBs</a>
+    <a href="/impressum.html">Impressum</a>
+    <a href="/datenschutz.html">Datenschutz</a>
+    <a href="https://www.instagram.com" target="_blank">Instagram</a>
+  </div>
+</footer>
+<script>document.getElementById("nav-ds").classList.add("active")</script>
+</body>
+</html>
